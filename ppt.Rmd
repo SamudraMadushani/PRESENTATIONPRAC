@@ -214,7 +214,7 @@ font-weight: bold;
 
   *  https://www.epid.gov.lk/web/index.php?option=com_content&view=article&id=148&Itemid=449&lang=en
 
-* Format of data table
+* Format of the table in the Epidemiological Report
 
 ```{r figurechapter11, echo=FALSE, message=FALSE, out.width = '100%', out.height = '40%', fig.height=5, fig.width=10}
 knitr::include_graphics("images/Rowdata.JPG")
@@ -231,6 +231,7 @@ knitr::include_graphics("images/Rowdata.JPG")
 * Each cell is a single measurement.
 
 ```{r echo=FALSE}
+D<-Data_Counts
 D
 ```
 
@@ -327,7 +328,7 @@ $$seasonality=max\Bigg\{0,1-\frac{Var(R_{t})}{Var(S_{t}+R_{t})}\Bigg\}$$
 
 ---
 
-# Feature based data visualization
+# Feature-based data visualization
 
 ```{r figurechapter160, echo=FALSE, message=FALSE, out.width = '90%', out.height = '45%',fig.height=4, fig.width=10, fig.align = 'center'}
 (TSFEAT|srsF1)
@@ -340,7 +341,7 @@ $$seasonality=max\Bigg\{0,1-\frac{Var(R_{t})}{Var(S_{t}+R_{t})}\Bigg\}$$
 class: inverse, middle
 
 ```{r figurechapter000005, echo=FALSE, fig.align = 'center',message=FALSE, out.width = '100%', out.height = '100%',fig.height=7,fig.weight=14}
-knitr::include_graphics("images/flow2.JPG")
+knitr::include_graphics("images/flow2M.JPG")
 ```
 
 ---
@@ -484,7 +485,7 @@ W
 
 ---
 
-# Year wise time series.
+# Year-wise time series
 
 ```{r figurechapter55, echo=FALSE, message=FALSE, out.width = '80%', out.height = '60%',fig.height=6, fig.width=10, fig.align = 'center'}
 SL_season
@@ -697,29 +698,29 @@ font-size: 1.5em;
 
 * Aburas, HM, Cetiner, BG & Sari, M 2010, ‘Dengue confirmed-cases prediction: A neural network model,’ Expert Systems with Applications, vol. 37, no. 6, pp. 4256–4260.
 
-* Agarwal, N, Koti, SR, Saran, S & Senthil Kumar, A 2018, ‘Data mining techniques for predicting dengue outbreak in geospatial domain using weather parameters for new delhi, india,’ Curr. Sci, vol. 114, no. 11, pp. 2281–2291.
+* Agarwal, N, Koti, SR, Saran, S & Senthil Kumar, A 2018, ‘Data mining techniques for predicting dengue outbreak in geospatial domain using weather parameters for New Delhi, India,’ Curr. Sci, vol. 114, no. 11, pp. 2281–2291.
 
 * Attanayake, A, Perera, S & Liyanage, U 2019, ‘Combining forecasts of arima and exponential smoothing models,’ Advances and Applications in Statistics, vol. 59, no. 2, pp. 199–208.
 
 * Chakraborty, T, Chattopadhyay, S & Ghosh, I 2019, ‘Forecasting dengue epidemics using a hybrid methodology,’ Physica A: Statistical Mechanics and its Applications, vol. 527, p. 121266.
 
-* Datoc, HI, Caparas, R & Caro, J 2016, ‘Forecasting and data visualization of dengue spread in the philippine visayas island group,’ in 2016 7th international conference on information, intelligence, systems & applications (IISA), IEEE, pp. 1–4.
+* Datoc, HI, Caparas, R & Caro, J 2016, ‘Forecasting and data visualization of dengue spread in the Philippine Visayas Island group,’ in 2016 7th international conference on information, intelligence, systems & applications (IISA), IEEE, pp. 1–4.
 
-* Dom, NC, Hassan, AA, Abd Latif, Z & Ismail, R 2013, ‘Generating temporal model using climate variables for the prediction of dengue cases in subang jaya, malaysia,’ Asian Pacific journal of tropical disease, vol. 3, no. 5, pp. 352–361.
+* Dom, NC, Hassan, AA, Abd Latif, Z & Ismail, R 2013, ‘Generating temporal model using climate variables for the prediction of dengue cases in Subang Jaya, Malaysia,’ Asian Pacific journal of tropical disease, vol. 3, no. 5, pp. 352–361.
 
 ---
 
-* Husin, NA, Salim, N & others 2008, ‘Modeling of dengue outbreak prediction in malaysia: A comparison of neural network and nonlinear regression model,’ in 2008 international symposium on information technology, IEEE, pp. 1–4.
+* Husin, NA, Salim, N & others 2008, ‘Modeling of dengue outbreak prediction in Malaysia: A comparison of neural network and nonlinear regression model,’ in 2008 international symposium on information technology, IEEE, pp. 1–4.
 
-* Prabodanie, RR, Schreider, S, Cazelles, B & Stone, L 2020, ‘Coherence of dengue incidence and climate in the wet and dry zones of sri lanka,’ Science of The Total Environment, vol. 724, p. 138269.
+* Prabodanie, RR, Schreider, S, Cazelles, B & Stone, L 2020, ‘Coherence of dengue incidence and climate in the wet and dry zones of Sri Lanka,’ Science of The Total Environment, vol. 724, p. 138269.
 
-* Siregar, FA, Makmur, T & Saprin, S 2018, ‘Forecasting dengue hemorrhagic fever cases using ARIMA model: A case study in asahan district,’ in IOP conference series: Materials science and engineering, IOP Publishing, p. 012032.
+* Siregar, FA, Makmur, T & Saprin, S 2018, ‘Forecasting dengue hemorrhagic fever cases using ARIMA model: A case study in Asahan district,’ in IOP conference series: Materials science and engineering, IOP Publishing, p. 012032.
 
-* Talagala, T & Lokupitiya, R 2015, ‘Wavelet analysis of dengue transmission pattern in sri lanka,’ Int J Mosquito Res, vol. 2, no. 4, pp. 13–18.
+* Talagala, T & Lokupitiya, R 2015, ‘Wavelet analysis of dengue transmission pattern in Sri Lanka,’ Int J Mosquito Res, vol. 2, no. 4, pp. 13–18.
 
-* Tipayamongkholgul, M, Fang, C-T, Klinchan, S, Liu, C-M & King, C-C 2009, ‘Effects of the el niño-southern oscillation on dengue epidemics in thailand, 1996-2005,’ BMC public health, vol. 9, no. 1, pp. 1–15.
+* Tipayamongkholgul, M, Fang, C-T, Klinchan, S, Liu, C-M & King, C-C 2009, ‘Effects of the el niño-southern oscillation on dengue epidemics in Thailand, 1996-2005,’ BMC public health, vol. 9, no. 1, pp. 1–15.
 
-* Wickramaarachchi, W, Perera, S & Jayasinghe, S 2015, ‘Modelling and analysis of dengue disease transmission in urban colombo: A wavelets and cross wavelets approach,’ Journal of the National Science Foundation of Sri Lanka, vol. 43, no. 4.
+* Wickramaarachchi, W, Perera, S & Jayasinghe, S 2015, ‘Modelling and analysis of dengue disease transmission in urban Colombo: A wavelets and cross wavelets approach,’ Journal of the National Science Foundation of Sri Lanka, vol. 43, no. 4.
 
 ---
 class: center, middle

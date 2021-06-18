@@ -258,11 +258,9 @@ D
  ]
  
 .pull-right[ 
-
 ```{r figurechapter05, echo=FALSE, fig.align = 'center',message=FALSE, out.width = '50%', out.height = '50%',fig.height=6,fig.weight=6}
 knitr::include_graphics("images/disc.JPG")
 ```
-
 ]
 
 <style>

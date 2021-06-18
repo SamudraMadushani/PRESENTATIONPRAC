@@ -319,7 +319,7 @@ data(sf_sl_0)
 SLPLOT<-ggplot(sf_sl_0) + geom_sf(mapping = aes(fill = COUNTRY), show.legend = FALSE)+
   theme(axis.ticks.x = element_blank(),axis.text.x = element_blank(),
         axis.ticks.y = element_blank(),
-        axis.text.y = element_blank())
+        axis.text.y = element_blank())+labs(title="Country level")
 
 PWPLOT<-ggplot(province) + geom_sf(mapping = aes(fill = PROVINCE), show.legend = TRUE)+
   theme(axis.ticks.x = element_blank(),axis.text.x = element_blank(),
@@ -330,12 +330,12 @@ DisMap4M<-ggplot(districts_sl) +
   geom_sf(aes(fill = DISTRICT), show.legend = FALSE)+
   theme(axis.ticks.x = element_blank(),axis.text.x = element_blank(),
         axis.ticks.y = element_blank(),
-        axis.text.y = element_blank())
+        axis.text.y = element_blank())+labs(title="District level")
 
 PWPLOTM<-ggplot(province) + geom_sf(mapping = aes(fill = PROVINCE), show.legend = FALSE)+
   theme(axis.ticks.x = element_blank(),axis.text.x = element_blank(),
         axis.ticks.y = element_blank(),
-        axis.text.y = element_blank())
+        axis.text.y = element_blank())+labs(title="Province level")
 
 SL_season<-DIS_DataDengueTEST%>%
   filter(is_aggregated(Province) & is_aggregated(Districts))%>%
@@ -369,7 +369,7 @@ TSFEAT<-ggplot(data_long,
                aes(x = Year,
                    y = value,
                    col = series)) +
-  geom_line()
+              geom_line()+labs(title="Time series")
 
 A.ts<-ts(c(AirPassengers),start=c(2007,1),frequency=52)
 A.FT<-tsfeatures(A.ts)
@@ -386,4 +386,4 @@ sstf1<-as_tibble(sstf1)
 srsF1<-sstf1%>%  ggplot(aes(x = trend, y = seasonality,col = series), show.legend = FALSE) +
   geom_point() +
   labs(y = "seasonality", x="trend")+ 
-  theme(aspect.ratio=1)
+  theme(aspect.ratio=1)+labs(title="Feature-based representation of time series")

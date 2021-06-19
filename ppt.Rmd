@@ -72,7 +72,7 @@ font-weight: bold;
 ---
 
 ```{r figurechapter0333, echo=FALSE, fig.align = 'center',message=FALSE, out.width = '100%', out.height = '80%',fig.height=8}
-knitr::include_graphics("images/LTS.JPG")
+knitr::include_graphics("images/LTSM.JPG")
 ```
 
 ---
